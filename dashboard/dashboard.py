@@ -65,7 +65,7 @@ st.markdown("""
 def load_data():
     try:
         # Memuat data utama (fokus pada pesanan yang sudah 'delivered')
-        df_main = pd.read_csv('main_data.csv')
+        df_main = pd.read_csv('dashboard/main_data.csv')
         
         # Konversi kolom tanggal ke datetime
         if 'order_purchase_timestamp' in df_main.columns:
